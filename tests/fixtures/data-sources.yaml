@@ -1,0 +1,4 @@
+sources:
+  - name: test_csv
+    type: csv
+    path: /Users/newtechlab/Desktop/Cleanup/mcp-plugins/mcp-data-pipeline-connector/tests/fixtures/sample.csv
