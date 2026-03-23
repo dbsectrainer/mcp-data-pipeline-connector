@@ -1,5 +1,6 @@
 {
   "name": "mcp-data-pipeline-connector",
+  "mcpName": "io.github.dbsectrainer/mcp-data-pipeline-connector",
   "version": "1.0.0",
   "description": "Universal data connector for CSV, Postgres, and REST APIs via DuckDB",
   "author": "dbsectrainer",
