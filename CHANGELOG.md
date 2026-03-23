@@ -7,12 +7,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [1.0.1] - 2026-03-23
-
-### Fixed
-
-- **BigInt serialization crash in `query` tool**: DuckDB returns integer columns as JavaScript `BigInt` values, which `JSON.stringify` cannot serialize, causing a `"Do not know how to serialize a BigInt"` error. Fixed by converting `BigInt` values to `Number` in the row-mapping pass inside `CsvConnector.query()` (`src/connectors/csv-connector.ts`) and in the cross-source query path in `createServer()` (`src/server.ts`). Updated the corresponding test to assert integer columns are returned as plain numbers.
-
 ## [1.0.0] - 2026-03-12
 
 ### Added
@@ -25,6 +19,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `@types/node` upgraded from `^20.x` to `^24.12.0` (Node 24 LTS).
 - `yargs` upgraded from `^17.x` to `^18.0.0`.
 - Added `author`, `license`, `repository`, and `homepage` fields to `package.json`.
+
+### Fixed
+
+- **BigInt serialization crash in `query` tool**: DuckDB returns integer columns as JavaScript `BigInt` values, which `JSON.stringify` cannot serialize, causing a `"Do not know how to serialize a BigInt"` error. Fixed by converting `BigInt` values to `Number` in the row-mapping pass inside `CsvConnector.query()` (`src/connectors/csv-connector.ts`) and in the cross-source query path in `createServer()` (`src/server.ts`).
 
 ### Security
 
