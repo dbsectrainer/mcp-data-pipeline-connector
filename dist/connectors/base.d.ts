@@ -1,14 +1,14 @@
 import type { ColumnInfo, QueryResult } from "../types.js";
 export interface DataConnector {
-  readonly name: string;
-  readonly type: string;
-  connect(): Promise<void>;
-  disconnect(): Promise<void>;
-  listTables(): Promise<string[]>;
-  getSchema(tableName: string): Promise<ColumnInfo[]>;
-  query(sql: string, maxRows: number): Promise<QueryResult>;
-  isConnected(): boolean;
-  healthCheck(): Promise<boolean>;
+    readonly name: string;
+    readonly type: string;
+    connect(): Promise<void>;
+    disconnect(): Promise<void>;
+    listTables(): Promise<string[]>;
+    getSchema(tableName: string): Promise<ColumnInfo[]>;
+    query(sql: string, maxRows: number): Promise<QueryResult>;
+    isConnected(): boolean;
+    healthCheck(): Promise<boolean>;
 }
 /**
  * Map a source-specific type string to the normalized standard set:

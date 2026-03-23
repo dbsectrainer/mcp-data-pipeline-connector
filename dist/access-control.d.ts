@@ -1,7 +1,7 @@
 export interface AccessPolicy {
-  source: string;
-  deny_columns?: string[];
-  row_filter?: string;
+    source: string;
+    deny_columns?: string[];
+    row_filter?: string;
 }
 /**
  * Apply column-level and row-level access control to a SQL query.
@@ -16,9 +16,4 @@ export interface AccessPolicy {
  * @param _userClaims  JWT claims from the authenticated user (reserved for future use).
  * @param policyPath Optional path to the YAML policy file.
  */
-export declare function applyAccessControl(
-  sql: string,
-  source: string,
-  _userClaims: Record<string, string>,
-  policyPath?: string,
-): string;
+export declare function applyAccessControl(sql: string, source: string, _userClaims: Record<string, string>, policyPath?: string): string;

@@ -8,10 +8,7 @@ import type { ServerOptions } from "./server.js";
  * @param port      TCP port to listen on
  * @returns         Promise that resolves once the server is listening
  */
-export declare function startHttpServer(
-  options: ServerOptions,
-  port: number,
-): Promise<{
-  close: () => void;
+export declare function startHttpServer(options: ServerOptions, port: number): Promise<{
+    close: () => void;
 }>;
 export type { Server };
