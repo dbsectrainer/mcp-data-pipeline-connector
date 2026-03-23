@@ -5,6 +5,21 @@ All notable changes to MCP Data Pipeline Connector will be documented in this fi
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 1.0.0 (2026-03-23)
+
+
+### Features
+
+* add mcpName for official MCP registry publication ([efc1581](https://github.com/dbsectrainer/mcp-data-pipeline-connector/commit/efc15814630010b967ec06d0e662bb2855264446))
+* add server.json for official MCP registry ([6cae5be](https://github.com/dbsectrainer/mcp-data-pipeline-connector/commit/6cae5bed8ac0ddb346daa39e6db76e300e7cde9b))
+* add smithery.yaml for Smithery deployment ([4712f16](https://github.com/dbsectrainer/mcp-data-pipeline-connector/commit/4712f167664528fdd67d89781f56828cdf147847))
+* initial release v1.0.0 ([1655dc3](https://github.com/dbsectrainer/mcp-data-pipeline-connector/commit/1655dc3c79672e7ff09088059d664d7888925567))
+
+
+### Bug Fixes
+
+* **ci:** lower branches coverage threshold to match actual coverage ([10d624b](https://github.com/dbsectrainer/mcp-data-pipeline-connector/commit/10d624b0419c1b06020f771b530ca8d5a79b118f))
+
 ## [Unreleased]
 
 ## [1.0.1] - 2026-03-23
