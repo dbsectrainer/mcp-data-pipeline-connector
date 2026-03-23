@@ -188,7 +188,7 @@ npm install && npm test
 
 ## Listings
 
-`mcp-data-pipeline-connector` is listed on [MCP Registry](https://registry.modelcontextprotocol.io) and [MCP Market](https://mcpmarket.io).
+`mcp-data-pipeline-connector` is listed on [MCP Registry](https://registry.modelcontextprotocol.io) and [MCP Market](https://mcpmarket.com).
 
 ## Troubleshooting
 
