@@ -1,0 +1,32 @@
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties:
+      readOnly:
+        type: boolean
+        description: "Run in read-only mode (no writes allowed)"
+        default: true
+      maxRows:
+        type: number
+        description: "Maximum number of rows to return per query"
+        default: 1000
+      config:
+        type: string
+        description: "Path to data sources YAML configuration file"
+      restCacheTtl:
+        type: number
+        description: "TTL in seconds for REST API response cache"
+        default: 60
+    required: []
+  commandFunction: |
+    (config) => ({
+      command: "node",
+      args: [
+        "dist/index.js",
+        ...(config.readOnly !== false ? ["--read-only"] : []),
+        ...(config.maxRows ? ["--max-rows", String(config.maxRows)] : []),
+        ...(config.config ? ["--config", config.config] : []),
+        ...(config.restCacheTtl ? ["--rest-cache-ttl", String(config.restCacheTtl)] : [])
+      ]
+    })
