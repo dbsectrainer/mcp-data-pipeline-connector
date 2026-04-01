@@ -1,0 +1,30 @@
+{
+  "name": "@be-easy/compliance-audit-mcp",
+  "version": "1.0.0",
+  "description": "Compliance & Audit MCP Server — automates compliance workflows for federal contracts (FedRAMP, CMMC, NIST) by BE EASY ENTERPRISES LLC",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "node-fetch": "^3.3.2",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.12.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3",
+    "vitest": "^4.1.0"
+  },
+  "author": "BE EASY ENTERPRISES LLC",
+  "license": "UNLICENSED",
+  "private": true
+}

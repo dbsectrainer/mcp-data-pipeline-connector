@@ -7,3 +7,6 @@ coverage/
 *.db
 *.db-shm
 *.db-wal
+mcp-servers/*/dist/
+mcp-servers/*/node_modules/
+mcp-servers/*/package-lock.json
